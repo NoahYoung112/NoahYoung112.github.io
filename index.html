@@ -3,14 +3,123 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Personal Portfolio — Your Name</title>
+	<title>Personal Portfolio — my name</title>
+	<style>
+		:root {
+			--bg: #f3ead9;
+			--header: #d8c4f2;
+			--text: #2c2a28;
+			--muted: #5f5a57;
+			--card: rgba(255, 255, 255, 0.75);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: 'Times New Roman', Times, serif;
+			background: var(--bg);
+			color: var(--text);
+		}
+
+		header {
+			background: var(--header);
+			padding: 32px 24px;
+			text-align: center;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2.8rem;
+			letter-spacing: 0.05em;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 20px auto 0;
+			display: flex;
+			justify-content: center;
+			gap: 24px;
+		}
+
+		nav a {
+			color: var(--text);
+			text-decoration: none;
+			font-size: 1rem;
+		}
+
+		nav a:hover,
+		nav a:focus {
+			text-decoration: underline;
+		}
+
+		main {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 32px 24px 48px;
+		}
+
+		section {
+			margin-bottom: 40px;
+			background: var(--card);
+			padding: 28px;
+			border-radius: 18px;
+			box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+		}
+
+		section h2 {
+			margin-top: 0;
+			font-size: 1.8rem;
+			letter-spacing: 0.02em;
+		}
+
+		section p,
+		section ul {
+			line-height: 1.7;
+			color: var(--muted);
+		}
+
+		.skills-list,
+		.projects-list,
+		.contacts-list {
+			padding-left: 1.2rem;
+		}
+
+		footer {
+			text-align: center;
+			padding: 22px 24px 30px;
+			font-size: 0.95rem;
+			color: var(--muted);
+		}
+
+		.footer-note {
+			max-width: 760px;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 680px) {
+			nav ul {
+				flex-direction: column;
+				gap: 14px;
+			}
+
+			section {
+				padding: 22px;
+			}
+		}
+	</style>
 </head>
 <body>
 	<header>
-		<h1>Your Name</h1>
+		<h1>my name</h1>
 		<nav>
 			<ul>
-				<li><a href="#about">About</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -19,23 +128,40 @@
 
 	<main>
 		<section id="about">
-			<h2>About</h2>
-			<p>Brief placeholder bio: I'm a web developer (or your role). I build things, learn constantly, and enjoy problem-solving.</p>
+			<h2>About Me</h2>
+			<p>Brief placeholder bio: I'm a web developer (or your role). I build things, learn constantly, and enjoy problem-solving. I value thoughtful design, strong communication, and steady improvement while working on meaningful projects.</p>
+		</section>
+
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul class="skills-list">
+				<li>HTML & CSS — clean structure and responsive layouts</li>
+				<li>JavaScript — interactive experiences and problem solving</li>
+				<li>Design fundamentals — typography, spacing, and consistency</li>
+				<li>Collaboration — clear communication and dependable delivery</li>
+			</ul>
 		</section>
 
 		<section id="projects">
 			<h2>Projects</h2>
-			<p>Project placeholder: Project A — short description. Project B — short description.</p>
+			<ul class="projects-list">
+				<li><strong>Project A</strong> — short description of a completed project, showcasing structure and polish.</li>
+				<li><strong>Project B</strong> — short description of another project, focused on problem solving and results.</li>
+			</ul>
 		</section>
 
 		<section id="contact">
 			<h2>Contact</h2>
-			<p>Contact placeholder: Email me at yourname@example.com or link to social profiles.</p>
+			<ul class="contacts-list">
+				<li>Email: yourname@example.com</li>
+				<li>LinkedIn / GitHub / other profiles as needed</li>
+				<li>Open to opportunities, collaborations, and new challenges.</li>
+			</ul>
 		</section>
 	</main>
 
 	<footer>
-		<p>© 2026 Your Name. All rights reserved.</p>
+		<p class="footer-note">© 2026 my name. Professional portfolio styling with a calm layout and clear navigation. All rights reserved.</p>
 	</footer>
 </body>
 </html>
